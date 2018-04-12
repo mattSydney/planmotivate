@@ -74,27 +74,8 @@ class GoalScreen extends Component {
       goalCompletionValue: this.props.goalCompletionValue,
     }
     this.props.addGoal(goal);    
-    //this.saveKey(this.props.goals)
   }
 
-  // async saveKey(value) {
-  //   try {
-  //     console.log("saving data");
-  //     console.log(this.props.goals)
-  //     await AsyncStorage.setItem('@MySuperStore:key', JSON.stringify(value));
-  //     console.log("saving data done.");
-  //   } catch (error) {
-  //     console.log("Error saving data" + error);
-  //   }
-  // }
-
-
-  constructor(props) {
-    super(props);
-    //this.props.navigator.setOnNavigatorEvent(this.onNavigatorEvent);
-    // this.onAuthComplete(this.props);
-
-  }
 
   static navigationOptions = {
     title: 'Plan/Motivate',
@@ -110,8 +91,6 @@ class GoalScreen extends Component {
     ),
 
   };
-
-
 
   render() {
     let renderButton = (

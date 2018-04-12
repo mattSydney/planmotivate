@@ -34,16 +34,16 @@ const ListViewItemVote = (props) => {
       </ TouchableOpacity>
       <View style={styles.itemTextView}>
         <Text style={styles.itemGoalTitle}>{Helper.trim(props.goalDescription)}</Text>
-        <Text style={styles.itemGoalReason}>{props.id}</Text>
+        <Text style={styles.itemGoalReason}>{props.goalReason}</Text>
       </View>
       <View style={styles.itemTextCompletionView}>
         <Text style={styles.itemTextCompletion}>{props.goalProgress}/{props.goalCompletionValue}</Text>
       </View>
+      {goalComplete(props.goalProgress, props.goalCompletionValue)}
       <TouchableOpacity onPress={() => props.onGoalDeleteHandler(props.id)}>
         <Icon
           name='delete' />
       </ TouchableOpacity>
-      {goalComplete(props.goalProgress, props.goalCompletionValue)}
     </View>
   )
 };
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     resizeMode: 'contain'
   },
   itemTextView: {
-    borderWidth: 1,
+    borderWidth: 0,
     flex: 4,
     marginLeft: 20,
   },

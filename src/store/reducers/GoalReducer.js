@@ -7,23 +7,10 @@ import  {
   DELETE_GOAL
 }  
   from '../actions/types';
-  
+  import { REHYDRATE } from 'redux-persist/es/constants';
   const initialAuthState =  {
   goals: [
-    {
-      id: 1,
-      goalDescription: "Walk 10 miles",
-      goalReason: "exploit proactive functionalities",
-      goalProgress: 9,
-      goalCompletionValue: 10,
-    },
-    {
-      id: 2,
-      goalDescription: "Walk 10 miles",
-      goalReason: "exploit proactive functionalities",
-      goalProgress: 8,
-      goalCompletionValue: 10,
-    }
+   
   ],
   //newGoal: 
   goalDescription: '',
