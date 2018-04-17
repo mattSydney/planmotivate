@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
 // create a component
+// When user has completed a goal display this...
 const ViewOverlay = () => {
     return(
         <View style={styles.goalComplete}>

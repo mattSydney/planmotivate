@@ -12,7 +12,6 @@ import  {
   goals: [
    
   ],
-  //newGoal: 
   goalDescription: '',
   goalReason: '',
   goalCompletionValue: '',
@@ -24,17 +23,13 @@ import  {
     switch (action.type) {
       case ADD_GOAL_DONE:
         return { ...state, goals:[...state.goals, action.goal], goalDescription:null, goalReason: null, goalCompletionValue: null };
-      case ADD_GOAL_FIELD_UPDATE:    
-        console.log("Calling Update GOAL")  
+      case ADD_GOAL_FIELD_UPDATE:            
         return {...state, [action.payload.prop]:action.payload.value};
-      case SET_GOAL_FROM_STORAGE:
-        console.log("Calling SET GOAL")
+      case SET_GOAL_FROM_STORAGE:        
         return {...state, goals:action.payload};
-      case INCREASE_GOAL_COMPLETION_VALUE :
-        console.log("Calling SET GOAL")
+      case INCREASE_GOAL_COMPLETION_VALUE :        
         return {...state, goals:action.payload};
-      case DELETE_GOAL:
-        console.log("delete goal")
+      case DELETE_GOAL:        
         return {...state, goals:action.payload};
       default:      
         return state;

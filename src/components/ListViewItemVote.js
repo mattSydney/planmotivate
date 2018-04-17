@@ -12,7 +12,7 @@ import ViewOverlay from './views/ViewOverlay';
 
 
 const goalComplete = (goalProgress, goalCompletionValue) => {
-  if (goalProgress === goalCompletionValue) {
+  if (goalProgress == goalCompletionValue) {
     return (
       <ViewOverlay />
     )
@@ -21,9 +21,8 @@ const goalComplete = (goalProgress, goalCompletionValue) => {
   }
 };
 
-
+// View to hold the item details in the FlatList
 const ListViewItemVote = (props) => {
-  //console.log(props)
   return (
     <View style={styles.item}>
       <TouchableOpacity
@@ -95,6 +94,4 @@ const styles = StyleSheet.create({
   itemGoalReason: {
     fontSize: 12
   },
-
-
 });

@@ -22,7 +22,6 @@ const FlatListItemSeparator = () => {
 	}
 
 const ListView = (props) => {
-	//console.log(props)
 		return (
 			<View style={styles.container}>
 				<FlatList

@@ -136,9 +136,6 @@ class GoalScreen extends Component {
 
 
 const mapStateToProps = state => {
-  // console.log(state.goal.goalDescription);
-  // isLoggedIn: state.auth.isLoggedIn,
-  // state.goal.
   return {
     goals: state.goal.goals,
     goalDescription: state.goal.goalDescription,

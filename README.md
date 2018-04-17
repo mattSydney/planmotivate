@@ -1,5 +1,7 @@
-# Redux example
+# Plan Motivate
 
-## Usage
+## React Native app using React Natigation, Redux and Redux Persist
 
-Please see the [Contributors Guide](https://reactnavigation.org/docs/guides/contributors#Run-the-Example-App) for instructions on running these example apps.
+Runs on expo. Feel free to detach and run on regular React Native
+
+

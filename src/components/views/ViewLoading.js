@@ -1,8 +1,8 @@
-//import liraries
+//import libs
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 
-// create a component
+// Simple view for when the app is loading
 const ViewLoading = () => {
     return(
         <View style={styles.goalComplete}>

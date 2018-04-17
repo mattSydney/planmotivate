@@ -1,15 +1,15 @@
 {
   "expo": {
     "name": "PlanMotivate",
-    "description": "Try out react-navigation with this awesome Redux example",
+    "description": "Create Beautiful Plans",
     "version": "1.0.0",
     "slug": "PlanMotivate",
-    "privacy": "public",
+    "privacy": "unlisted",
     "orientation": "portrait",
     "primaryColor": "#cccccc",
-    "icon": "./assets/icons/react-navigation.png",
+    "icon": "./assets/icons/IconBig.png",
     "loading": {
-      "icon": "./assets/icons/react-navigation.png",
+      "icon": "./assets/icons/IconBig.png",
       "hideExponentText": false
     },
     "sdkVersion": "25.0.0",
@@ -18,7 +18,11 @@
       "assetExts": ["ttf", "mp4"]
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.polyesterstudio.planmotivate"
+    },
+    "android": {
+      "package": "com.polyesterstudio.planmotivate"
     }
   }
 }
