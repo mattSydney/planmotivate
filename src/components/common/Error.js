@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import { Colors } from '../../constants/Constants';
+
 const Error = ({ errorMessage }) => {
   return (
     <View style={styles.errorStyle}>

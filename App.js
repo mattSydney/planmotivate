@@ -11,22 +11,22 @@ import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import autoMergeLevel2 from 'redux-persist/lib/stateReconciler/autoMergeLevel2';
 import { PersistGate } from 'redux-persist/lib/integration/react';
-import  ViewLoading  from './src/components/views/ViewLoading';
+import ViewLoading from './src/components/views/ViewLoading';
 
 const persistConfig = {
   key: 'root',
   storage: storage,
   stateReconciler: autoMergeLevel2 // see "Merge Process" section for details.
- };
+};
 
- const reducer = persistReducer(persistConfig, AppReducer);
- 
- const store = createStore(
-   reducer,
-   applyMiddleware(middleware,ReduxThunk)
- );
- const persistor = persistStore(store);
- 
+const reducer = persistReducer(persistConfig, AppReducer);
+
+const store = createStore(
+  reducer,
+  applyMiddleware(middleware, ReduxThunk)
+);
+const persistor = persistStore(store);
+
 
 
 
@@ -34,9 +34,6 @@ const persistConfig = {
 /*
 **********************
 SET INITIAL ROUTE IN Store/reducers/navreducer
-
-
-
 */
 
 
@@ -44,8 +41,8 @@ class PlanMotivate extends React.Component {
   render() {
     return (
       <Provider store={store}>
-       <PersistGate loading={<ViewLoading />} persistor={persistor}>
-        <AppWithNavigationState />
+        <PersistGate loading={<ViewLoading />} persistor={persistor}>
+          <AppWithNavigationState />
         </PersistGate>
       </Provider>
     );

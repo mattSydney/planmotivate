@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, Text, Alert, AsyncStorage, Platform } from 'react-native';
-import { NavigationActions } from 'react-navigation';
-import { Spinner } from '../components/common/Spinner';
+import { StyleSheet, View, Text, Alert } from 'react-native';
 import { connect } from 'react-redux';
 import { Colors } from '../constants/Constants';
 import { ButtonImage } from '../components/buttons/ButtonImage';
@@ -25,6 +23,7 @@ class MainScreen extends Component {
     ),
     headerLeft: null
   });
+
 
   // User presses button to increase the goal has been complete
   handleGoalIncrease = (index) => {

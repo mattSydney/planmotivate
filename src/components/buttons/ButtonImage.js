@@ -1,9 +1,8 @@
 import React from 'react';
-import { Text, TouchableOpacity, Image } from 'react-native';
+import { TouchableOpacity, Image } from 'react-native';
 
 const ButtonImage = ({ onPress, children }) => {
-  const { buttonStyle, textStyle } = styles;
-
+  const { buttonStyle } = styles;
   return (
     <TouchableOpacity onPress={onPress} style={buttonStyle}>
       <Image
